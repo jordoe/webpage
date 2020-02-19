@@ -25,6 +25,9 @@
         color: $primary-textColor;
         margin: 0;
     }
+    @media only screen and (max-width: 800px) {
+        width: 60%;
+    }
 }
 
 .email {
