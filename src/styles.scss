@@ -10,3 +10,22 @@ h1,h2,h3,h4,h5,p {
 body {
     margin: 0;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+    // background: rgb(28,135,158);
+    // background: linear-gradient(9deg, rgba(28,135,158,1) 0%, rgba(166,255,212,1) 100%);
+}
+   
+::-webkit-scrollbar-thumb {
+    // background: #196b97;
+    background: #a6ffd4;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #74d4c4;
+}

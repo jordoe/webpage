@@ -1,0 +1,23 @@
+@import '../../../variables.scss';
+
+.container {
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background: rgb(19,52,137);
+    background: linear-gradient(162deg, rgba(19,52,137,1) 0%, rgba(28,135,158,1) 72%, rgba(166,255,212,1) 100%);    
+}
+
+.logo-container {
+    cursor: pointer;
+    height: 4rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    color: $primary-textColor;
+}

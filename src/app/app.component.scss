@@ -12,6 +12,21 @@
 .content-wrapper {
     flex-grow: 1;
     overflow: auto;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex-grow: 1;
+    @media only screen and (min-width: 1300px) {
+        padding: 0 16%;
+    }
+}
+
+.footer {
+
 }
 
 .projects {

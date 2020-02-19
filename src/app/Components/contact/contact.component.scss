@@ -1,0 +1,38 @@
+@import '../../../variables.scss';
+
+.container {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    margin: 6rem 0;
+}
+
+.section-title {
+    cursor: default;
+    width: 26rem;
+    height: 2.8rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;   
+    background: rgb(19,52,137);
+    background: linear-gradient(162deg, #133489 0%, #1c879e 50%, #a6ffd4 100%);
+    h2 {
+        color: $primary-textColor;
+        margin: 0;
+    }
+}
+
+.email {
+    cursor: pointer;
+    margin: 0;
+    margin-top: 1rem;
+    h1 {
+        color: $secondary-textColor;
+        margin: 0;
+    }
+}
