@@ -9,6 +9,8 @@
     @media only screen and (max-width: 800px) {
         flex-direction: column;
         height: auto;
+        padding: 2rem;
+        padding-top: 0;
     }
 }
 
@@ -158,14 +160,14 @@
     position: absolute;
     transform: translateX(-100%);
     padding-right: 1rem;
-    color: #4474ab;
+    color: #7fd6b2;
     h3 {
         font-size: 1.3rem;
         margin: 0;
         white-space: nowrap;
     }
     &--secondary {
-        color: #a2e2d9;
+        color: #39b1c4;
         h4 {
             margin: 0;
             white-space: nowrap;
