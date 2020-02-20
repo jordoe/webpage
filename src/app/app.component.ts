@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.titleService.setTitle( "Portfolio" );
+    this.titleService.setTitle("Portfolio");
     this.scrollElem = document.getElementById("scroll");
   }
 
