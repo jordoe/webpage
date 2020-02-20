@@ -37,6 +37,9 @@
     display: flex;
     height: 88%;
     width: 100%;
+    &--not-overflow {
+        overflow: hidden;
+    }
     @media only screen and (max-width: 800px) {
         flex-direction: column;
     }
@@ -129,6 +132,10 @@
     border-radius: 10rem;
 }
 
+:root {
+    --animduration: 1;
+}
+
 .event {
     position: relative;
     display: flex;
@@ -138,6 +145,7 @@
     height: 1.5rem;
     border-radius: 10rem;
     margin: 1rem 0;
+    animation-name: timeLineEnter;
     &--secondary {
         width: 1rem;
         height: 1rem;
@@ -211,5 +219,20 @@
     to {
         animation-timing-function: ease-in;        
         left: 0rem;
+    }
+}
+
+@keyframes timeLineEnter {
+    0% {
+        animation-timing-function: ease-out;
+        transform: translateY(80rem);
+    }
+    50% {
+        animation-timing-function: ease-out;
+        transform: translateY(80rem);
+    }
+    100% {
+        animation-timing-function: ease-in;        
+        transform: translateY(0rem);
     }
 }
