@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router, NavigationStart, NavigationEnd } from '@angular/router';
 
 @Component({
@@ -7,6 +7,8 @@ import { Router, NavigationStart, NavigationEnd } from '@angular/router';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
+
+  @Output() selectContactEvent = new EventEmitter<any>()
 
   public projectsSelected: number;
 
@@ -41,5 +43,9 @@ export class NavComponent implements OnInit {
     } else if(this.router.url === '/videogames') {
       this.projectsSelected = 2;
     }
+  }
+
+  public pressContact(): void {
+    this.selectContactEvent.emit();
   }
 }

@@ -2,34 +2,34 @@
     <div class="top nav-padding">
         <h2 class="text">Jorge Domínguez Egea</h2>
         <div class="top-right">
-            <h3 class="text text__clickable">Contact</h3>
+            <h3 class="text text__clickable" (click)="pressContact()">Contacto</h3>
         </div>
     </div>
     <div class="bottom nav-padding">
         <div class="bottom-shine"></div>
         <div class="projects paddingDiv" (click)="selectProjects(0)" routerLink="/software">
             <div class="icon-box" [class.icon-box--selected]="projectsSelected === 0">
-                <svg class="icon--small" width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="icon--small" [class.icon__selected]="projectsSelected === 0" width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.17969 27.0039C6.56641 26.5482 5.34961 25.7962 4.5293 24.748C3.7181 23.709 3.3125 22.3327 3.3125 20.6191V17.8984C3.3125 15.6836 2.34635 14.5762 0.414062 14.5762V12.5938C2.34635 12.5938 3.3125 11.4909 3.3125 9.28516V6.44141C3.33073 4.77344 3.73633 3.42904 4.5293 2.4082C5.33138 1.37826 6.54818 0.630859 8.17969 0.166016L8.69922 1.73828C6.79427 2.34896 5.8418 3.93945 5.8418 6.50977V9.27148C5.8418 11.3405 5.08073 12.7806 3.55859 13.5918C5.08073 14.4121 5.8418 15.8659 5.8418 17.9531V20.7695C5.86914 23.276 6.82161 24.8301 8.69922 25.4316L8.17969 27.0039ZM16.2324 25.4316C18.0827 24.8392 19.0397 23.3307 19.1035 20.9062V17.8984C19.1035 15.793 19.9284 14.3574 21.5781 13.5918C19.9284 12.8444 19.1035 11.4089 19.1035 9.28516V6.50977C19.1035 3.93945 18.151 2.34896 16.2461 1.73828L16.7656 0.166016C18.3789 0.621745 19.5911 1.36458 20.4023 2.39453C21.2135 3.41536 21.6237 4.76888 21.6328 6.45508V9.32617C21.6328 11.5046 22.599 12.5938 24.5312 12.5938V14.5762C22.599 14.5762 21.6328 15.6836 21.6328 17.8984V20.6602C21.6328 22.3737 21.2181 23.7454 20.3887 24.7754C19.5684 25.8053 18.3607 26.5482 16.7656 27.0039L16.2324 25.4316Z" fill="white"/>
                 </svg>
             </div>
-            <h3 class="text text__clickable text__responsive-desktop text--padding">Software Projects</h3>
+            <h3 class="text text__clickable text__responsive-desktop text--padding">Proyectos de Software</h3>
             <h3 class="text text__clickable text__responsive-mobile text--padding">Software</h3>
         </div>
         <div class="projects paddingDiv" (click)="selectProjects(1)" routerLink="/design">
             <div class="icon-box" [class.icon-box--selected]="projectsSelected === 1">
-                <svg class="icon" width="23" height="38" viewBox="0 0 23 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="icon" [class.icon__selected]="projectsSelected === 1" width="23" height="38" viewBox="0 0 23 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1 19.5625L5.47541 28H17.1803L22 19.5625L12.5 1V15.5H11.25H10V1L1 19.5625Z" stroke="white" stroke-width="1.5"/>
                     <circle cx="11.5" cy="18.5" r="2.75" stroke="white" stroke-width="1.5"/>
                     <rect x="1.75" y="30.5278" width="19.0556" height="6.72222" stroke="white" stroke-width="1.5"/>
                 </svg>
             </div>
-            <h3 class="text text__clickable text__responsive-desktop text--padding">Design Projects</h3>
-            <h3 class="text text__clickable text__responsive-mobile text--padding">Design</h3>
+            <h3 class="text text__clickable text__responsive-desktop text--padding">Proyectos de Diseño</h3>
+            <h3 class="text text__clickable text__responsive-mobile text--padding">Diseño</h3>
         </div>
         <div class="projects paddingDiv" (click)="selectProjects(2)" routerLink="/videogames">
             <div class="icon-box" [class.icon-box--selected]="projectsSelected === 2">
-                <svg class="icon" width="40" height="21" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="icon" [class.icon__selected]="projectsSelected === 2" width="40" height="21" viewBox="0 0 40 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.75" y="0.75" width="38.5" height="19.5" rx="9.75" stroke="white" stroke-width="1.5"/>
                     <rect x="9" y="6" width="2" height="8" fill="white"/>
                     <rect x="14" y="9" width="2" height="8" transform="rotate(90 14 9)" fill="white"/>
@@ -39,8 +39,8 @@
                     <circle cx="32.75" cy="10" r="1.25" fill="white"/>
                 </svg>
             </div>
-            <h3 class="text text__clickable text__responsive-desktop text--padding">VideoGames Projects</h3>
-            <h3 class="text text__clickable text__responsive-mobile text--padding">VideoGames</h3>
+            <h3 class="text text__clickable text__responsive-desktop text--padding">Proyectos de Videojuegos</h3>
+            <h3 class="text text__clickable text__responsive-mobile text--padding">Videojuegos</h3>
         </div>
     </div>
 </div>

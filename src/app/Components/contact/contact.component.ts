@@ -12,4 +12,7 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
 
+  public goToUrl(url: string): void {
+    window.open(url, '_blank');
+  }
 }
