@@ -72,10 +72,10 @@
 .img-placeholder {
     height: 100%;
     width: 22rem;
-    background: rgb(167,218,239);
-    background: linear-gradient(162deg, rgba(167,218,239,1) 0%, rgba(188,239,215,1) 100%);
+    img {
+        width: 100%;
+    }
     @media only screen and (max-width: 800px) {
-        height: 14rem;
         width: 10rem;
     }
 }
